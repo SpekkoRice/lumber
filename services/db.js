@@ -29,7 +29,7 @@ function Database() {
         options.dbDialect = 'mysql';
       } else if (options.dbConnectionUrl.startsWith('mssql://')) {
         options.dbDialect = 'mssql';
-      } else if (options.dbConnectionUrl.startsWith('mongodb://')) {
+      } else if (options.dbConnectionUrl.startsWith('mongodb://') || options.dbConnectionUrl.startsWith('mongodb+srv://')) {
         options.dbDialect = 'mongodb';
       }
     }
